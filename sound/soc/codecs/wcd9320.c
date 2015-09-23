@@ -7344,6 +7344,7 @@ static struct regulator *taiko_codec_find_regulator(struct snd_soc_codec *codec,
 
 #ifdef CONFIG_LGE_HEADSET_MIC_NOISE_WA
 void taiko_dec5_vol_mute(void)
+
 {
        u16 tx_vol_ctl_reg;
        s8 decimator = 5; /* DEC5 */
@@ -7359,6 +7360,7 @@ void taiko_dec5_vol_mute(void)
 }
 
 EXPORT_SYMBOL(taiko_dec5_vol_mute);
+#endif
 
 #ifdef CONFIG_SOUND_CONTROL_HAX_3_GPL
 struct snd_soc_codec *fauxsound_codec_ptr;
